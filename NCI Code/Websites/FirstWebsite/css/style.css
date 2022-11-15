@@ -1,0 +1,44 @@
+h2 {
+    color: rgb(255, 0, 0);
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+}
+
+h3 {
+    color: rgb(17, 0, 255);
+}
+p {
+    color:rgb(255, 0, 0);
+}
+
+span {
+    color: rgb(0, 255, 255);
+    font-weight: 300;
+    text-decoration: underline;
+    text-shadow: 1cm;
+}
+span :hover::after {
+    color: rgb(238, 0, 0);
+    transition: 0.5s;
+}
+#green {
+    color: green;
+}
+
+body {
+    color: red;
+    /* this is a CSS comment*/
+}
+
+a {
+    color:#ffffff;
+    padding: 10px;
+    background-color: #33cc33;
+}
+
+table, th, td {
+    border: 1px, solid black;
+    padding: 10px;
+}

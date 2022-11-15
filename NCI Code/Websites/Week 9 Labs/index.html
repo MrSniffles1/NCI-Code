@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        var Animals = new Array("dog", "elephant", "cat","mouse","lion","seal");
+
+        alert("The first item in the array : " +Animals[0]);
+        
+        if(Animals[1].length > 5) {
+            alert("The second value is longer : " + Animals[1].length + " Letters")
+            alert("The word was : " + Animals[1]);
+
+        }
+
+        else{
+            alert("It is not longer")
+        }
+
+        var myStuff = new Array("hat","umbrella","tablet","wallet","pen");
+
+        alert("I have the following items: " + myStuff[0] + " " + myStuff[1] + " " + myStuff[2] + " " + myStuff[3] + " " + myStuff[4])
+        
+        for (iCounter = 0; iCounter < myStuff.length; iCounter++) {
+            alert("My stuff : " + myStuff[iCounter]);
+        }
+
+    </script>
+
+
+</body>
+</html>

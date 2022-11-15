@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: red;
+}
+
+@media screen and (max-width: 980px) {
+    #pagewrap {
+    width: 90%;
+    }
+    #content {
+    width: 60%;
+    background-color: olive;
+    }
+    #sidebar {
+    width: 30%;
+    background-color: teal;
+    }
+    }
+
+    @media screen and (max-width: 700px) {
+        #content {
+        width: auto;
+        float: none;
+        background-color: orange;
+        }
+        #sidebar {
+        width: auto;
+        float: none;
+        }
+        }
+        @media screen and (max-width: 480px) {
+        #content {
+        width: auto; float: none;
+        background-color: yellow;
+        }
+        h1{
+        font-size: 50px;
+        }
+        #sidebar {
+        display: none;
+        }
+        }

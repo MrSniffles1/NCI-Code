@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+.header {
+    min-height: 10vh;
+    background-color: rgb(82, 47, 14);
+    display: flex;
+}
+.header img {
+    right: inherit;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: yellowgreen;
+    max-width: 15vh;
+    min-width: 12vh;
+}
+
+

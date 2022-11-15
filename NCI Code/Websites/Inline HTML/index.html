@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <p id="Hello">Love</p>
+    <h1 id="World"></h1>
+    <div id="yay"></div>
+
+    <div id="myDiv">
+        <p>Some Text Goes Here</p>
+    </div>
+
+    <button type="button" onclick="changeStyle();" name="button">Click Me</button>
+
+    <script type="text/javascript">
+        var input = prompt("Input 1 or 2", "")
+
+        if(input == 1) {
+            document.getElementById("Hello").innerHTML="Hello World";
+        }
+
+        function changeStyle(){
+            var changeMe=document.getElementById('myDiv');
+            changeMe.style.border = "dashed";
+            changeMe.style.borderColor = "red";
+            changeMe.style.borderWidth = "5px";
+            changeMe.style.backgroundColor = "blue";
+        }
+        function changeStyle(){
+            var changeMe=document.getElementById('myDiv');
+            changeMe.style.border = "none";
+            changeMe.style.borderColor = "white";
+            changeMe.style.borderWidth = "0px";
+            changeMe.style.backgroundColor = "white";
+        }
+
+        document.getElementById("World").innerHTML="I am here";
+        document.getElementById("yay").innerHTML="This is the end";
+
+    </script>
+
+</body>
+</html>

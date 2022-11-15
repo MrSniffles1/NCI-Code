@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Script Practice</title>
+</head>
+<body>
+    
+    
+    <script type="text/javascript">
+        var num = prompt("Enter the first number ", "");
+        var num2 = prompt("Enter the second number ", "")
+        var numInt = parseInt(num);
+        var numInt2 = parseInt(num2);
+
+
+        var answer = numInt * numInt2;
+        document.writeln("Result of multiplication = " + answer);
+        document.write("<br>")
+        alert("Result of multiplication "+ answer)
+
+        answer = numInt + numInt2;
+        document.writeln("Result of adding = " + answer);
+        document.write("<br>")
+        alert("Result of adding "+ answer)
+
+        answer = numInt - numInt2;
+        document.writeln("Result of subtracting = " + answer);
+        document.write("<br>")
+        alert("Result of subtracting "+ answer)
+
+        answer = numInt % numInt2;
+        document.writeln("Result of dividing = " + answer);
+        document.write("<br>")
+        alert("Result of dividing "+ answer)
+
+        if(numInt>numInt2) {
+            document.write("<br>")
+            document.writeln("The first number is bigger than the second")
+        }
+
+        else if(numInt<numInt2) {
+            document.write("<br>")
+            document.writeln("The second number is bigger than the first number")
+        }
+        
+        else {
+            document.write("<br>")
+            document.writeln("The numbers are equal")
+        }
+        document.write("<br>");
+
+
+        var secretNumber = prompt("Guess the secret number between 1 and 10 ","");
+        var secNum = parseInt(secretNumber)
+        var max = 10;
+        var min = 1;
+
+        function getRandomNum(max){
+            return Math.floor(Math.random() * max);
+        }
+
+        const secAnswer =getRandomNum(10);
+        var secParse = parseInt(secAnswer);
+        
+        if(secNum==secParse) {
+            document.write("<br>");
+            document.write("Congrats you guessed the secret number!");
+        }
+        else {
+            document.write("<br>");
+            document.write("You didn't guess the secret number.");
+        }
+        document.write("<br>");
+        document.write("The answer is : "+secAnswer)
+        
+
+    </script>
+</body>
+</html>
